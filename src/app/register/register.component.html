@@ -1,38 +1,33 @@
-<form class="animated-div" (ngSubmit)="CheckRegistrationInfo()">  
+<div class="animated-div">  
     <h2>Register</h2>
     
     <input 
       type="text" 
       id="username" 
       [(ngModel)]="username" 
-      name="username" 
       placeholder="Username">
 
     <input 
       type="email" 
       id="email" 
       [(ngModel)]="email" 
-      name="email" 
       placeholder="Email Address">
     
     <input 
       type="password" 
       id="password" 
-      [(ngModel)]="password" 
-      name="password" 
+      [(ngModel)]="password"
       placeholder="New Password"
       (input)="validatePassword()">
       
 
     <input 
       type="password" 
-      id="confirmPassword" 
       [(ngModel)]="confirmPassword" 
-      name="confirmPassword" 
       placeholder="Confirm Password"
       (input)="validateConfirmPassword()">
 
     <span class="error-message" *ngIf="confirmPasswordError">{{ confirmPasswordError }}</span>
     
-    <button mat-raised-button type="submit" (click)="CheckRegistrationInfo()">Submit!</button>
-  </form>
+    <button mat-raised-button (click)="CheckRegistrationInfo()">Submit!</button>
+</div>

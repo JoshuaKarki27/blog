@@ -1,6 +1,6 @@
 .animated-div {
     position: absolute;
-    bottom: 35%;  
+    bottom: 20%;  
     left: 50%;      
     transform: translateX(-50%);
     width: 300px;

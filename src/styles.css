@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+label, body, form { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+body { 
+    color: white;
+    background-image: url('./app/sky-background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+

@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
+  imports: [RouterOutlet, CommonModule, MatButtonModule],
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'abhi-blog';
+  showButtons: boolean = true;
+
+  constructor(private router: Router) {}
+
+  navigateTo(page: string) {
+    this.showButtons = false;
+    this.router.navigate([page]);
+  }
+
+  onShowButtonsChange(show: boolean) {
+    this.showButtons = show;
+  }
 }

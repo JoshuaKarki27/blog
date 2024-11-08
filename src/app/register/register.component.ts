@@ -36,18 +36,6 @@ export class RegisterComponent {
 
   passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{10,}$/;
 
-  addUser() {
-    this.newUser.username = this.username;
-    this.newUser.password = this.password;
-    this.newUser.email = this.email;
-
-    this.userService.addUser(this.newUser);
-
-    if (!this.passwordError && !this.confirmPasswordError) {
-      this.showMainButtons();
-    }
-  }
-
   showMainButtons() {
     this.router.navigate(['']); 
     this.showMainButtonsEvent.emit(true); 
@@ -75,6 +63,10 @@ export class RegisterComponent {
     this.validateConfirmPassword();
 
     if (!this.passwordError && !this.confirmPasswordError) {
+      this.newUser.username = this.username;
+      this.newUser.password = this.password;
+      this.newUser.email = this.email;
+      this.userService.addUser(this.newUser);
       this.showMainButtons();
     }
   }

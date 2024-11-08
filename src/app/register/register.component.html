@@ -1,4 +1,4 @@
-<form class="animated-div" (ngSubmit)="addUser()">  
+<form class="animated-div" (ngSubmit)="CheckRegistrationInfo()">  
     <h2>Register</h2>
     
     <input 
@@ -34,5 +34,5 @@
 
     <span class="error-message" *ngIf="confirmPasswordError">{{ confirmPasswordError }}</span>
     
-    <button mat-raised-button type="submit">Submit!</button>
+    <button mat-raised-button type="submit" (click)="CheckRegistrationInfo()">Submit!</button>
   </form>

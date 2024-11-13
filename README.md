@@ -5,7 +5,7 @@ The web application must be designed to act as a blog in which the user:
 * logs in using their registration credentials 
 * can post, delete, and edit blogs to their profile, which can be viewed, liked, and commented on by other users
 ## Goal/Motivation
-The goal of this project is to strictly follow an agile approach to iteratively develop and gather requirements from the client. It also allows me to gain practical experience in agile and web development with angular. 
+The goal of this project is to strictly follow an agile approach to gain hands on experience with web design using Angular, the git vcs, and development with Agile. 
 
 ## Installation guide
 ### Prerequesite 

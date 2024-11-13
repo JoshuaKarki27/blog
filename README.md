@@ -8,7 +8,7 @@ The web application must be designed to act as a blog in which the user:
 The goal of this project is to strictly follow an agile approach to iteratively develop and gather requirements from the client. It also allows me to gain practical experience in agile and web development with angular. 
 
 ## Installation guide
-###Prerequesite 
+### Prerequesite 
 You must have [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [angular](https://v17.angular.io/guide/setup-local) installed (in that order) by following the steps in the links. 
 
 ### Step One: Setup project destination

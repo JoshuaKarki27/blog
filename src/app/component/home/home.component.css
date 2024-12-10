@@ -1,0 +1,60 @@
+/* Main container for text and image */
+.content-container {
+    display: flex; /* Align text and image horizontally */
+    justify-content: space-between; /* Add space between text and image */
+    align-items: flex-start; /* Align items to the top */
+    padding: 40px 80px; /* Add padding around the content */
+    gap: 40px; /* Add space between the text and image */
+  }
+  
+  /* Image content styling */
+  .image-content {
+    flex: 1; /* Allow image container to adjust */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    padding-top: 25px;
+  }
+  
+  .image-content img {
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+  }
+  
+  .start-reading {
+    padding: 0.75rem 1.5rem;
+    background-color: black;
+    color: white;
+    font-size: 15pt;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px transparent;
+    width: fit-content;
+    font-family: 'Caladea';
+}
+
+main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: left;
+    text-align: left;
+    padding: 4rem 2rem;
+    margin-left: 50px;
+}
+
+h1 {
+    padding-top: 80px;
+    line-height: 1; 
+    font-family:'DM Serif Display'; 
+    font-size:50pt;
+}
+
+p {
+    font-size: 20pt; 
+    line-height: 2;
+}
+
+a {
+    font-size: 15pt; 
+}

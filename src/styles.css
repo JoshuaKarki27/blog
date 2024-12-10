@@ -1,12 +1,15 @@
 label, body, form { 
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    margin: 0;
 }
 
-body { 
-    color: white;
-    background-image: url('./app/sky-background-image.jpg');
+body, h1 { 
+    color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    margin: 0; 
 }
 
+html {
+    min-height: 75vh;
+    margin: 0;
+}

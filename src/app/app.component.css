@@ -1,40 +1,61 @@
-.animated-div {
-    position: absolute;
-    bottom: 35%;  
-    left: 50%;      
-    transform: translateX(-50%);
-    width: 300px;
-    padding: 20px;
-    background: transparent;
-    background-color: transparent;
-    backdrop-filter: blur(5px); /* Blur effect for background */
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10;
-    gap: 10px;
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: 0.0625rem solid black;
+  font-family: 'DM Serif Display', serif;
+  width: 100%; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  align-items: center;  
 }
 
-.animated-div h1 {
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    font-family: "Courier New", monospace;
+.logo {
+  margin-left: 10%; 
+  font-size: clamp(3rem, 6vw, 5rem);
 }
 
-.animated-div input {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    color: white;
-    font-family: "Courier New", monospace;
+nav {
+  align-items: center;  
+  display: flex;
+  gap: 2rem; 
+  padding-right: 7%;
 }
 
-.animated-div input::placeholder {
-    color: white;
+nav a {
+  margin: 0; 
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.75rem, 1vw, 2rem);
+  font-family: 'Albert Sans';
+}
+
+.get-started {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem; 
+  border-radius: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 2rem; 
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0; 
+  border-top: 0.0625rem solid black;
+  width: 100%; 
+  box-sizing: border-box; 
+  position: relative;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(0.75rem, 1vw, 2rem);
+  justify-content: space-around;
 }

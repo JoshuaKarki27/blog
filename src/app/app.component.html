@@ -1,7 +1,16 @@
-<div class='animated-div' *ngIf="showButtons">
-  <h1>Welcome!</h1>
-  <button mat-raised-button (click)="navigateTo('login')">Login</button>
-  <button mat-raised-button (click)="navigateTo('register')">Create Account</button>
-</div>
+<header>
+  <a class="logo" (click)="navigateTo('')">Large</a>
+  <nav>
+    <a (click)="navigateTo('our-story')">Our Story</a>
+    <a (click)="navigateTo('login')">Sign In</a>
+    <a (click)="navigateTo('register')" class="get-started" style="color:white;"><b>Get started</b></a>
+  </nav>
+</header>
 
-<router-outlet (activate)="onShowButtonsChange(false)" (deactivate)="onShowButtonsChange(true)"></router-outlet>
+<router-outlet></router-outlet>
+
+<footer>
+  <a (click)="navigateTo('help-page')" style="color: gray;">Help</a>
+  <a href="https://github.com/JoshuaKarki27/blog/tree/main" style="color: gray;">Github</a>
+  <a (click)="navigateTo('login')" style="color: gray;">Blog</a>
+</footer>

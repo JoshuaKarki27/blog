@@ -1,0 +1,66 @@
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem; /* Adjust padding for better spacing */
+  gap: 1.5rem; /* Reduce gap for better alignment */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.image-content {
+  flex: 1; /* Allow image container to adjust */
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+  padding-top: 1.5625%;
+  size: 3rem;
+}
+
+.image-content img {
+  height: auto; 
+  max-width: 100%; 
+  margin-right: 10%;
+}
+
+main {
+  width: 100%; /* Ensure the main content spans full width */
+  padding: 2rem; /* Adjust padding for consistency */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.text-container {
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 9%;
+}
+
+.start-reading {
+  padding: 1rem 3rem;
+  background-color: black;
+  color: white;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 0 0.125rem transparent;
+  width: fit-content;
+  font-family: 'Caladea';
+} 
+
+h1 {
+  padding-top: 3rem;
+  line-height: 1; 
+  font-family: 'DM Serif Display'; 
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  line-height: 2;
+  font-family: 'Albert Sans';
+}
+
+a {
+  line-height: 5;
+  font-size: 1rem; 
+}

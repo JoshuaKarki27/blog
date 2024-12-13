@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "abhi-blog": {
+    "blog": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/abhi-blog",
+            "outputPath": "dist/blog",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "abhi-blog:build:production"
+              "buildTarget": "blog:build:production"
             },
             "development": {
-              "buildTarget": "abhi-blog:build:development"
+              "buildTarget": "blog:build:development"
             }
           },
           "defaultConfiguration": "development"

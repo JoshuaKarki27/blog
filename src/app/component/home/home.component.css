@@ -1,60 +1,66 @@
-/* Main container for text and image */
 .content-container {
-    display: flex; /* Align text and image horizontally */
-    justify-content: space-between; /* Add space between text and image */
-    align-items: flex-start; /* Align items to the top */
-    padding: 40px 80px; /* Add padding around the content */
-    gap: 40px; /* Add space between the text and image */
-  }
-  
-  /* Image content styling */
-  .image-content {
-    flex: 1; /* Allow image container to adjust */
-    display: flex;
-    justify-content: flex-end; /* Align image to the right */
-    padding-top: 25px;
-  }
-  
-  .image-content img {
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional rounded corners */
-  }
-  
-  .start-reading {
-    padding: 0.75rem 1.5rem;
-    background-color: black;
-    color: white;
-    font-size: 15pt;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 30px;
-    box-shadow: 0 0 0 2px transparent;
-    width: fit-content;
-    font-family: 'Caladea';
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem; /* Adjust padding for better spacing */
+  gap: 1.5rem; /* Reduce gap for better alignment */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.image-content {
+  flex: 1; /* Allow image container to adjust */
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+  padding-top: 1.5625%;
+  size: 3rem;
+}
+
+.image-content img {
+  height: auto; 
+  max-width: 100%; 
+  margin-right: 10%;
 }
 
 main {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    align-items: left;
-    text-align: left;
-    padding: 4rem 2rem;
-    margin-left: 50px;
+  width: 100%; /* Ensure the main content spans full width */
+  padding: 2rem; /* Adjust padding for consistency */
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
+.text-container {
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 9%;
+}
+
+.start-reading {
+  padding: 1rem 3rem;
+  background-color: black;
+  color: white;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 0 0.125rem transparent;
+  width: fit-content;
+  font-family: 'Caladea';
+} 
+
 h1 {
-    padding-top: 80px;
-    line-height: 1; 
-    font-family:'DM Serif Display'; 
-    font-size:50pt;
+  padding-top: 3rem;
+  line-height: 1; 
+  font-family: 'DM Serif Display'; 
+  font-size: clamp(2rem, 6vw, 5rem);
 }
 
 p {
-    font-size: 20pt; 
-    line-height: 2;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  line-height: 2;
+  font-family: 'Albert Sans';
 }
 
 a {
-    font-size: 15pt; 
+  line-height: 5;
+  font-size: 1rem; 
 }

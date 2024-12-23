@@ -1,4 +1,163 @@
-html, p, body {
-    min-height: 75vh;
-    margin: 0;
+/* Reset and general styles */
+* {
+  background-color: black; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 10%;
+  border-bottom: 1px solid white;
+  border-bottom: 0.0625rem solid white;
+  font-family: 'DM Serif Display', serif;
+}
+
+.logo {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: clamp(0.75rem, 1vw, 2rem);
+  padding-inline: 4rem;
+  text-align: center;
+}
+
+.get-started {
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.get-started:hover {
+  background-color: black;
+  color: white;
+}
+
+.sign-in {
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+.sign-in:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Content styles */
+.content {
+  text-align: start;
+  padding: 1% 15%;
+  color: white;
+  background-color: black;
+}
+
+.title {
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: white;
+  font-family: 'Albert Sans';
+}
+
+.highlight {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.github-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  padding: 25px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: start;
+  padding-left: 12%;
+  font-family: 'DM Serif Display', serif;
+}
+
+.start-writing {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  padding: 25px;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: start;
+  padding-left: 12%;
+  font-family: 'DM Serif Display', serif;
+}
+
+.github-link:hover, .start-writing:hover {
+  background-color: white;
+  color: black;
+  width: 100%; /* Ensure the container spans full width */
+  border: none;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  padding: 20px 10%;
+  border-top: 1px solid white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
+  text-align: end;
+}
+
+.footer a:hover {
+  color: white;
 }

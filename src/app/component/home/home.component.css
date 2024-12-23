@@ -34,7 +34,7 @@ main {
 }
 
 .start-reading {
-  padding: 1rem 3rem;
+  padding: 3%;
   background-color: black;
   color: white;
   font-size: clamp(1rem, 1.5vw, 2rem);

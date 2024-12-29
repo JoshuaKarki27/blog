@@ -1,1 +1,38 @@
-<p>our-story works!</p>
+<header class="header">
+  <a class="logo" (click)="navigateTo('')">Large</a>
+  <nav>
+    <a (click)="navigateTo('login')" class="sign-in">Sign In</a>
+    <a (click)="navigateTo('register')" class="get-started"> Sign Up </a>
+  </nav>
+</header>
+
+<main class="content">
+  <h1 class="title">We All Have Things To Say</h1>
+  <p class="description">
+    Large is the place for people’s tales and thoughts. It started as a project meant to
+    give me experience designing a web application with Angular and Firebase using
+    the Agile Principles I learned in class.
+  </p>
+  <p class="highlight">
+    <em>Through this project, I have a much deeper understanding of the MVC architecture, Data Binding,
+    Dependency Injection, and routing for SPAs.</em>
+  </p>
+  <p class="description">
+    I have much to learn about all the features of Angular and even more to do to
+    expand and improve on this project.
+  </p>
+  <p class="description">
+    Please visit the Github link below to check the status and progress of this project:
+  </p>
+</main>
+
+<div class="links">
+  <button href="#" class="github-link">Github</button>
+  <button href="#" class="start-writing">Start Writing</button>
+</div>
+
+<footer class="footer">
+  <a (click)="navigateTo('help-page')">Help</a>
+  <a href="https://github.com/JoshuaKarki27/blog/tree/main">Github</a>
+  <a (click)="navigateTo('login')">Blog</a>
+</footer>

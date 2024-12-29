@@ -1,4 +1,4 @@
-<header>
+<header *ngIf="currPath != 'our-story'">
   <a class="logo" (click)="navigateTo('')">Large</a>
   <nav>
     <a (click)="navigateTo('our-story')">Our Story</a>
@@ -7,9 +7,10 @@
   </nav>
 </header>
 
-<router-outlet></router-outlet>
+<router-outlet style = "background-color: black;" *ngIf="currPath=='our-story'"></router-outlet>
+<router-outlet style = "background-color: white;" *ngIf="currPath!='our-story'"></router-outlet>
 
-<footer>
+<footer *ngIf="currPath != 'our-story'">
   <a (click)="navigateTo('help-page')" style="color: gray;">Help</a>
   <a href="https://github.com/JoshuaKarki27/blog/tree/main" style="color: gray;">Github</a>
   <a (click)="navigateTo('login')" style="color: gray;">Blog</a>
